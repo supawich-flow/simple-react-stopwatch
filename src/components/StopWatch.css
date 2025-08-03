@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background:linear-gradient(to right, rgb(87, 87, 87), rgb(19, 19, 19));
+    display: flex;
+    justify-content: center;
+    margin-top: 12rem;
+}
+
+.container {
+    padding: 1rem;
+    width: 700px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.animatedModel img{
+    margin-top: -6rem;
+    width: 270px;
+    height: auto;
+}
+
+.shownTime{
+    font-size: 4rem;
+    margin-top: -3rem;
+    font-weight: 500;
+}
+
+.controlButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.controlButtons button{
+    margin-top: 1rem;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: rgb(117, 117, 117);
+    cursor: pointer;
+    transition: all ease 0.2s;
+    margin-bottom: 1rem;
+}
+
+.controlButtons button:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+.controlButtons button:disabled{
+    cursor: not-allowed;
+}
+
+.statusText {
+    color: rgb(0, 73, 0);
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.5rem;
+    color: #696969;
+}
+
+footer p{
+    font-size: 12px;
+    font-weight: 200;
+}
